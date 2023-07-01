@@ -1,0 +1,146 @@
+@media(max-width:1200px) {
+    .films__cards {
+        grid-template-columns: repeat(2, 255px);
+        justify-content: center;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:992px) {
+    .collection__cards {
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .nav__item {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .header__content_title {
+        font-size: 55px;
+    }
+
+    .header__content {
+        align-items: center;
+    }
+
+    .widow::after {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 31%, rgba(255, 255, 255, 0) 100.72%);
+    }
+
+    .widow__item {
+        align-items: center;
+    }
+
+    .footer__text{
+        font-size: 15px;
+    }
+
+    .footer__items{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px) {
+    .header__content_title {
+        font-size: 35px;
+        line-height: 20px;
+    }
+
+    .header__content_btns_btn {
+        padding: 17px 30px;
+    }
+
+    .header {
+        height: 640px;
+    }
+
+    .films__cards {
+        grid-template-columns: repeat(1, 255px);
+        justify-content: center;
+    }
+
+    .widow__item img {
+        width: 100%;
+    }
+
+    .series__cards{
+        grid-template-areas: 'thrones thrones thrones thrones'
+        'thrones thrones thrones thrones'
+        'wanda wanda wanda wanda'
+        'wanda wanda wanda wanda'
+        'flash flash great great'
+        'gotham gotham witcher witcher';
+    }
+
+    .series__card_title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .series__card_text{
+        font-size: 14px;
+    }
+
+
+    .thrones {
+        grid-area: thrones;
+        padding: 96px 22px 97px 22px;
+    }
+    
+    .wanda {
+        grid-area: wanda;
+    }
+    
+    .flash {
+        grid-area: flash;
+    }
+    
+    .gotham {
+        grid-area: gotham;
+    }
+    
+    .great {
+        grid-area: great;
+    }
+    
+    .witcher {
+        grid-area: witcher;
+    }
+
+    
+
+}
+
+@media(max-width:375px) {
+    .header__content_title {
+        font-size: 31px;
+    }
+
+    .widow__item_text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .collection__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .series__card_span{
+        font-size: 19px;
+    }
+
+    .series__card_title{
+        font-size: 27px;
+    }
+}
+
+@media(max-width:320px) {}
